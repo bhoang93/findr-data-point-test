@@ -1,6 +1,6 @@
-﻿using FindrDataPointTest;
+﻿using FindrDataPointTest.HttpClients;
 
-namespace ConsoleApp1;
+namespace FindrDataPointTest.SkillGatherers;
 
 public class GithubSkillGatherer
 {
@@ -14,8 +14,6 @@ public class GithubSkillGatherer
     public async Task<List<Skill>> GetSkillsFromUser(string username)
     {
         var repos = await _client.GetReposForUser(username);
-        return new List<Skill>() { new(repos.First().Language) };
+        return repos.Select(repo => new Skill(repo.language)).Distinct().ToList();
     }
 }
-
-public record Repository(string Language);
