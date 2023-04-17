@@ -1448,32 +1448,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/meryemsel/.nuget/packages/": {}
+    "C:\\Users\\Brian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/meryemsel/Documents/Github/findr-data-point-test/FindrDataPointTestTests/FindrDataPointTestTests.csproj",
+      "projectUniqueName": "D:\\code\\ConsoleApp1\\FindrDataPointTestTests\\FindrDataPointTestTests.csproj",
       "projectName": "FindrDataPointTestTests",
-      "projectPath": "/Users/meryemsel/Documents/Github/findr-data-point-test/FindrDataPointTestTests/FindrDataPointTestTests.csproj",
-      "packagesPath": "/Users/meryemsel/.nuget/packages/",
-      "outputPath": "/Users/meryemsel/Documents/Github/findr-data-point-test/FindrDataPointTestTests/obj/",
+      "projectPath": "D:\\code\\ConsoleApp1\\FindrDataPointTestTests\\FindrDataPointTestTests.csproj",
+      "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\ConsoleApp1\\FindrDataPointTestTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/meryemsel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/meryemsel/Documents/Github/findr-data-point-test/FindrDataPointTest/FindrDataPointTest.csproj": {
-              "projectPath": "/Users/meryemsel/Documents/Github/findr-data-point-test/FindrDataPointTest/FindrDataPointTest.csproj"
+            "D:\\code\\ConsoleApp1\\FindrDataPointTest\\FindrDataPointTest.csproj": {
+              "projectPath": "D:\\code\\ConsoleApp1\\FindrDataPointTest\\FindrDataPointTest.csproj"
             }
           }
         }
@@ -1523,8 +1525,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -1533,7 +1534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
       }
     }
   }

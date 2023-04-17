@@ -1,8 +1,4 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b0956a9c_002D9029_002D4491_002D95f9_002D29bd132fa43f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ReturnSkillWhenUserHasOneRepo" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::0FFB429A-7F0B-4C09-ABBF-A23EE2FACA6D::net6.0::FindrDataPointTestTests.GithubGathererShould.ReturnSkillWhenUserHasOneRepo&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::0FFB429A-7F0B-4C09-ABBF-A23EE2FACA6D::net6.0::FindrDataPointTestTests.GithubGathererShould.ReturnSkillWhenUserHasTwoRepos&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::0FFB429A-7F0B-4C09-ABBF-A23EE2FACA6D::net6.0::FindrDataPointTestTests.GithubGathererShould.ReturnOnlyUniqueSkillsWhenUserHasMultipleRepos&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Project Location="D:\code\ConsoleApp1\FindrDataPointTestTests" Presentation="&amp;lt;FindrDataPointTestTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,14 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using ConsoleApp1;
-using System.Text.Json;
-using FindrDataPointTest.HttpClients;
-using System.Net.Http.Headers;
-using System.Text.Json.Serialization;
 using System.IO.Compression;
+using System.Net.Http.Headers;
 using System.Text;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+namespace FindrDataPointTest.HttpClients.Stackoverflow;
 
 internal class StackoverflowHttpClient : IStackoverflowHttpClient
 {
@@ -16,6 +13,7 @@ internal class StackoverflowHttpClient : IStackoverflowHttpClient
 
     public StackoverflowHttpClient()
     {
+        _client.DefaultRequestHeaders.Accept.Clear();
         _client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("gzip"));
         _client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("deflate"));
         _client.DefaultRequestHeaders.Accept.Add(
@@ -46,10 +44,7 @@ internal class StackoverflowHttpClient : IStackoverflowHttpClient
         string responseString = Encoding.UTF8.GetString(responseContent);
 
         await using Stream stream =
-           await _client.GetStreamAsync("https://api.stackexchange.com/2.3/users/13570600/tags?order=desc&sort=popular&site=stackoverflow");
-
-        StreamReader reader = new StreamReader(stream);
-        string text = reader.ReadToEnd();
+            await _client.GetStreamAsync("https://api.stackexchange.com/2.3/users/13570600/tags?order=desc&sort=popular&site=stackoverflow");
 
         var data = JsonConvert.DeserializeObject<Items>(responseString);
 
