@@ -7,4 +7,14 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="SkillGatherers\Stackoverflow\" />
+      <None Remove="Newtonsoft.Json" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="SkillGatherers\Stackoverflow\" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
 </Project>

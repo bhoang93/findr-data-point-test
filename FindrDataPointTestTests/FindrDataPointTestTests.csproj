@@ -15,10 +15,14 @@
         <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
         <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
         <PackageReference Include="coverlet.collector" Version="3.1.2" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\FindrDataPointTest\FindrDataPointTest.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Newtonsoft.Json" />
+    </ItemGroup>
 </Project>

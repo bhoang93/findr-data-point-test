@@ -24,7 +24,10 @@ class GithubHttpClient : IGithubHttpClient
     {
         await using Stream stream =
             await _client.GetStreamAsync($"https://api.github.com/users/{username}/repos");
-        
+
+        StreamReader reader = new StreamReader(stream);
+        string text = reader.ReadToEnd();
+
         var repositories =
             await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
 
