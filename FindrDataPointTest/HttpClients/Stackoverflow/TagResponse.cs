@@ -2,7 +2,7 @@
 
 using FindrDataPointTest.HttpClients;
 
-public class Items
+public class TagResponse
 {
     public List<Tag> items { get; set; }
 

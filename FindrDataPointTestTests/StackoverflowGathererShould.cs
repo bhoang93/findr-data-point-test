@@ -23,7 +23,7 @@ namespace FindrDataPointTestTests
             var expected = new List<Skill> { new(language) };
 
             // Act
-            var result = await gatherer.GetSkillsFromUser(userId);
+            var result = await gatherer.GetSkillsFromUserByTags(userId);
 
             // Assert
             Assert.That(result, Is.EqualTo(expected));
